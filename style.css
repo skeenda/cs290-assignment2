@@ -1,0 +1,60 @@
+/*First column of the table in italic */
+tbody tr th:first-child{
+	font-style: italic;
+	font-weight: normal;
+}
+
+/*Setting up the table */
+table, th, td{
+	border: 2px solid gray;
+}
+
+/*first non-header cell comes red text*/
+tbody tr th:nth-child(2){
+	color: red;
+}
+
+/*Third non-header blue*/
+tbody tr th:nth-child(4){
+	color: blue;
+}
+/*Odd non-header rows light green background.*/
+tbody tr:nth-of-type(odd)
+{
+	background-color: lightgreen;
+
+}
+/*Even non-header light blue background*/
+tbody tr:nth-of-type(even)
+{
+	background-color: lightblue;
+}
+
+/*When hovering over dt, dd purple background*/
+dt:hover +dd{
+	background-color: purple;
+}
+
+/*div that takes up 3/4 of page width, space of 20px b/t it and previous element*/
+.outer-content{
+	width: 75%;
+	background-color: pink;
+	margin-top: 20px;
+}
+
+.inner-content{
+	background-color: blue;
+	width: 75%;
+	text-align: center;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+img{
+	margin: 10px;
+	float: left;
+	height: 100px;
+	width: 125px;
+}
